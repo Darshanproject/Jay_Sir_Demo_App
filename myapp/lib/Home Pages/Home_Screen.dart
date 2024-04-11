@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:myapp/Home%20Pages/First_Page.dart';
+import 'package:myapp/Home%20Pages/Fourth_Page.dart';
+import 'package:myapp/Home%20Pages/Second_Page.dart';
+import 'package:myapp/Home%20Pages/Third_page.dart';
 
 class Home_Page extends StatefulWidget {
   const Home_Page({super.key});
@@ -10,7 +14,12 @@ class Home_Page extends StatefulWidget {
 
 class _Home_PageState extends State<Home_Page> {
   int _slecetedindex = 0;
- static const List<Widget> name =  <Widget>[Text("Hello"),Text("Hello"),Text("Hello"),Text("Hello"),];
+ static const List<Widget> name =  <Widget>[
+  First_page(),
+  Second_Page(),
+  Third_Page(),
+  Fourth_Page()
+ ];
   void onitemclick(int index){
     setState(() {
       _slecetedindex = index;
